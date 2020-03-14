@@ -1,0 +1,11 @@
+<launch>
+
+    <include file="/home/prateeks977/catkin_ws/src/turtlebot3_simulations/turtlebot3_gazebo/launch/turtlebot3_empty_world.launch"/>
+    
+    <arg name="code"/>
+    <node pkg="assignment3" type="circle.py" name="circle"
+    if="$(eval code == 'circle')"/>
+    <node pkg="assignment3" type="square.py" name="square"
+    if="$(eval code == 'square')"/>
+
+</launch>
