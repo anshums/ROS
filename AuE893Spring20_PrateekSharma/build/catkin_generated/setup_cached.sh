@@ -7,4 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export PWD="/home/prateeks977/ROS/AuE893Spring20_PrateekSharma/build"
+export PWD="/home/anshu/git_ws/AuE893Spring20_AnshumanSharma/assignment2_ws/build"

@@ -1,0 +1,8 @@
+prefix=/home/anshu/git_ws/AuE893Spring20_AnshumanSharma/assignment2_ws/devel
+
+Name: image_geometry
+Description: Description of image_geometry
+Version: 1.12.8
+Cflags: -I/home/anshu/git_ws/AuE893Spring20_AnshumanSharma/assignment2_ws/src/turtlebot3_handout7/vision_opencv/image_geometry/include
+Libs: -L${prefix}/lib -limage_geometry
+Requires: sensor_msgs

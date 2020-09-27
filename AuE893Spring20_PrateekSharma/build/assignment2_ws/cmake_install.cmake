@@ -1,8 +1,8 @@
-# Install script for directory: /home/prateeks977/ROS/AuE893Spring20_PrateekSharma/src/assignment2_ws
+# Install script for directory: /home/anshu/git_ws/AuE893Spring20_AnshumanSharma/assignment2_ws/src/assignment2_ws
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/prateeks977/ROS/AuE893Spring20_PrateekSharma/install")
+  set(CMAKE_INSTALL_PREFIX "/home/anshu/git_ws/AuE893Spring20_AnshumanSharma/assignment2_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,17 +33,17 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/prateeks977/ROS/AuE893Spring20_PrateekSharma/build/assignment2_ws/catkin_generated/installspace/assignment2_ws.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/anshu/git_ws/AuE893Spring20_AnshumanSharma/assignment2_ws/build/assignment2_ws/catkin_generated/installspace/assignment2_ws.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/assignment2_ws/cmake" TYPE FILE FILES
-    "/home/prateeks977/ROS/AuE893Spring20_PrateekSharma/build/assignment2_ws/catkin_generated/installspace/assignment2_wsConfig.cmake"
-    "/home/prateeks977/ROS/AuE893Spring20_PrateekSharma/build/assignment2_ws/catkin_generated/installspace/assignment2_wsConfig-version.cmake"
+    "/home/anshu/git_ws/AuE893Spring20_AnshumanSharma/assignment2_ws/build/assignment2_ws/catkin_generated/installspace/assignment2_wsConfig.cmake"
+    "/home/anshu/git_ws/AuE893Spring20_AnshumanSharma/assignment2_ws/build/assignment2_ws/catkin_generated/installspace/assignment2_wsConfig-version.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/assignment2_ws" TYPE FILE FILES "/home/prateeks977/ROS/AuE893Spring20_PrateekSharma/src/assignment2_ws/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/assignment2_ws" TYPE FILE FILES "/home/anshu/git_ws/AuE893Spring20_AnshumanSharma/assignment2_ws/src/assignment2_ws/package.xml")
 endif()
 

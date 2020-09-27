@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "assignment2_ws"
-PROJECT_SPACE_DIR = "/home/prateeks977/ROS/AuE893Spring20_PrateekSharma/install"
+PROJECT_SPACE_DIR = "/home/anshu/git_ws/AuE893Spring20_AnshumanSharma/assignment2_ws/install"
 PROJECT_VERSION = "0.0.0"

@@ -1,6 +1,6 @@
 set(_CATKIN_CURRENT_PACKAGE "assignment2_ws")
 set(assignment2_ws_VERSION "0.0.0")
-set(assignment2_ws_MAINTAINER "prateek <prateek@todo.todo>")
+set(assignment2_ws_MAINTAINER "anshu <anshu@todo.todo>")
 set(assignment2_ws_PACKAGE_FORMAT "2")
 set(assignment2_ws_BUILD_DEPENDS "roscpp" "rospy" "std_msgs")
 set(assignment2_ws_BUILD_EXPORT_DEPENDS "roscpp" "rospy" "std_msgs")

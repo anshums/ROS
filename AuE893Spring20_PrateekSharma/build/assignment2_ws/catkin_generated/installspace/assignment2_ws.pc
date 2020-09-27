@@ -1,4 +1,4 @@
-prefix=/home/prateeks977/ROS/AuE893Spring20_PrateekSharma/install
+prefix=/home/anshu/git_ws/AuE893Spring20_AnshumanSharma/assignment2_ws/install
 
 Name: assignment2_ws
 Description: Description of assignment2_ws
