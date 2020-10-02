@@ -1,11 +1,50 @@
-Assignement 4: Obstacle Avoidance With Turtlebot3
 
-Team: Bun Tikki
+## ASSIGNMENT 4: Wall Following and Obstacle Avoidance
 
-Team Members: Ankit Verma, Anshuman Sharma, Prateek Sharma, Rishabh Bhatia and Shaurya Panthri
+<img src="https://github.com/rishabhbhatiamp/ROS/blob/master/AuE893Spring2020/src/assignment4_obstacleavoidance/videos/Wall%20Following%20and%20Obstacle%20Avoidance/Obstacle_Avoidance_real.gif" height="400" />
 
-Part 1: In this section we developed a code in python 2.7 around the problem of wall following. For this we implemented p-controller gain to achieve a constant distance difference of 0 units between the left wall and the right wall. We limited the field of view for the left side and right side of the lidar data, i.e. extracte 60 degree values both sides. We tried providing a constant value of velocity in linear direction. However constraints were applied during implementaiton of code in real world.
+NOTE: To add this package to your own workspace, copy [this](https://github.com/rishabhbhatiamp/ROS/tree/master/AuE893Spring2020/src/assignment4_obstacleavoidance) folder to the src folder of your workspace and run the below command in the package directory.
+```
+$ catkin_make
+```
 
-Part 2: In this section we developed the obbstacle avoidance algorithm. The approach presented in the question was adopted. 3 sectors were considered and calculated logic was implemented for the bot to provide steering ability to the bot in case of collision. The bot successfully follows a collision free path.
+The launch files can be found in the [launch](https://github.com/rishabhbhatiamp/ROS/tree/master/AuE893Spring2020/src/assignment4_obstacleavoidance/launch) folder
 
-Part 3: The last part of the assignment was to implement codes in real world scenario. Many exceptions were observed. Since the walls made with cardboard boxes had gaps in between them, the lidar data was abrupt during such instances which led to improper velocities. Also, modifications to the orignal codes were made to adopt the real world parameters, such as wide optimization was done to get appropriate p-gain. Linear velocity was changed several times and the maximum distance that the turtlebot could have with the wall was incorporated and changed as well.
+The python script files can be found in the [nodes](https://github.com/rishabhbhatiamp/ROS/tree/master/AuE893Spring2020/src/assignment4_obstacleavoidance/scripts) folder
+
+### Description and Running Instructions: 
+
+### 1. turtlebot3_wall_follower.launch
+
+- This file initializes the wall_following world in gazebo
+- It launches the wall_follower.py file as a node for moving the turtlebot between the two walls and avoiding any collisions with these walls
+- The command for executing the above launch file is:
+```
+$ roslaunch assignment4_obstacleavoidance turtlebot3_wall_follower.launch 
+```
+<img src="https://github.com/rishabhbhatiamp/ROS/blob/master/AuE893Spring2020/src/assignment4_obstacleavoidance/videos/Wall%20Following%20and%20Obstacle%20Avoidance/Wall_following_sim.gif" height="400" />
+
+### 2. turtlebot3_obstaceavoidance.launch
+
+- This file initializes the obstacle_avoidance world.
+- This world has several obstacles that the turtlebot must avoid
+- This file also launches the wander.py node which executes the desired obstacle avoidance behavior of the turtlebot
+- Since the turtlebot has no goal location, it just keeps wandering in the world while avoiding obstacles
+- The command for execution of this launch file is:
+```
+$ roslaunch assignment4_obstacleavoidance turtlebot3_obstaceavoidance.launch 
+```
+<img src="https://github.com/rishabhbhatiamp/ROS/blob/master/AuE893Spring2020/src/assignment4_obstacleavoidance/videos/Wall%20Following%20and%20Obstacle%20Avoidance/obstacle_avoidance_sim.gif" height="400" />
+
+### 3. turtlebot3_obstaceavoidance.launch  (same file as part 2)
+
+NOTE: for this implementation, you must already be connected to a turtlebot via ssh, and any teleop operations shold be turned off before running the files of this package. The setup instructions for the turtlebot robot can be found [here](https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/)
+
+- The python code wander.py used in part 2 was applied on the turtlebot burger and rested with the help of some boxes places as obstacles in the path of the robot.
+
+- The command for execution of this launch file is:
+```
+$ roslaunch assignment4_obstacleavoidance turtlebot3_obstaceavoidance.launch
+```
+
+<img src="https://github.com/rishabhbhatiamp/ROS/blob/master/AuE893Spring2020/src/assignment4_obstacleavoidance/videos/Wall%20Following%20and%20Obstacle%20Avoidance/Obstacle_Avoidance_real.gif" height="400" />
