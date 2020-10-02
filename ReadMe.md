@@ -30,7 +30,7 @@ This repository contains ROS based implementation files prepared as a part of as
 
 Obstacle avoidance |  Apriltag tracking  | Line-follower
 :-------------------------:|:-------------------------:|:-------------------------:
-<img src="https://github.com/rishabhbhatiamp/ROS/blob/master/AuE893Spring2020/src/assignment4_obstacleavoidance/videos/Wall%20Following%20and%20Obstacle%20Avoidance/Obstacle_Avoidance_real.gif" height="200" />  | <img src="https://github.com/rishabhbhatiamp/ROS/blob/master/AuE893Spring2020/src/assignment5_trackingandfollowing/videos/April_tag_detection/AprilTag%20Detection%20and%20following/AprilTag_following.gif" height="200" />  | <img src="https://github.com/rishabhbhatiamp/ROS/blob/master/AuE893Spring2020/src/assignment5_trackingandfollowing/videos/Line_Follower/Line%20Following/Line_following_real.gif" height="200" />
+<img src="https://github.com/rishabhbhatiamp/ROS/blob/master/AuE893Spring2020/src/assignment4_obstacleavoidance/videos/Wall%20Following%20and%20Obstacle%20Avoidance/obstacle_avoidance_sim.gif" height="200" />  | <img src="https://github.com/rishabhbhatiamp/ROS/blob/master/AuE893Spring2020/src/assignment5_trackingandfollowing/videos/April_tag_detection/AprilTag%20Detection%20and%20following/AprilTag_following.gif" height="200" />  | <img src="https://github.com/rishabhbhatiamp/ROS/blob/master/AuE893Spring2020/src/assignment5_trackingandfollowing/videos/Line_Follower/Line%20Following/Line_following_real.gif" height="200" />
 
 ## Simulations in Gazebo and Rviz:
 
