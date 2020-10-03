@@ -1,31 +1,40 @@
 
-## AuE893 Final Project Gazebo Model
+## ASSIGNMENT 6: Behaviour planning for autonomous mode switching
 
-Dependencies that are not included:
+<img src="https://github.com/rishabhbhatiamp/ROS/blob/master/AuE893Spring2020/src/final_project/videos/final_project_SLAM.gif" height="400" />
 
-* The TB3 packages
-* cmvision
+NOTE: To add this package to your own workspace, copy [this](https://github.com/rishabhbhatiamp/ROS/tree/master/AuE893Spring2020/src/final_project/auefinals/turtlebot3_auefinals) folder to the src folder of your workspace and run the below command in the package directory.
+```
+catkin_make
+```
+The launch files can be found in the [launch](https://github.com/rishabhbhatiamp/ROS/tree/master/AuE893Spring2020/src/final_project/auefinals/turtlebot3_auefinals/launch) folder
 
-To bring up the Gazebo Model:
+The python script files can be found in the [nodes](https://github.com/rishabhbhatiamp/ROS/tree/master/AuE893Spring2020/src/final_project/auefinals/turtlebot3_auefinals/scripts) folder.
 
-roslaunch turtlebot3_auefinals turtlebot3_autonomy_finals.launch
+### Description: 
 
-The keyboard teleop functionality will be displayed on a new terminal window. Use keyboard to teleop the human.
+filename: "turtlebot3_autonomy_final.launch"
 
-There are 3 sections to this project:
+This file initializes the following nodes:
 
-* Task 1: Wall following/Obstacle avoidance - The Turtlebot starts here. It must successfully follow the wall and avoid the obstacles until it reaches the yellow line.
-* Task 2:
-- Line following - The Turtlebot must successfully follow the yellow line.
-- Stop Sign detection - While navigating the yellow line, the the Turtlebot should stop at the stop sign for 3 seconds before continuing. The stop-sign will be detected by TinyYOLO.
-* Task 3: Human tracking - The Turtlebot must use a trained DL network to identify the human in the environment and follow it around. The human in Gazebo can be teleoperated around using the keyboard. This teleoperation is already part of the given Gazebo environment.
+1. The auefinal world
 
+2. The standing person which will be used for leg tracking
 
-This model contains code from the following repositories:
+3. The person teleop window
 
-* (Person Simulator) The Construct: https://bitbucket.org/theconstructcore/person_sim/src/master/
-* (TB3 model + inpsiration) TB3 Autorace: https://github.com/ROBOTIS-GIT/turtlebot3_autorace_2020.git
+4. Leg detection package
 
-Maintainers:
+5. Tiny yolo package
 
-* Adhiti Raman (TA)
+6. Main integrated python script for the requirements of the final project: 
+
+NOTE: This component of the launch file has been commented to allow for the world and the several nodes load up correctly. This node can be run manually after everything has loaded to ensure that the bot starts moving only after it can be seen in the world.
+
+7. hector slam navigation package (arg value can be changed to run the other packages if they are installed in your system)
+
+### Running Instructions: 
+The command for executing the above launch file is:
+```
+$ roslaunch turtlebot3_auefinals_pkg turtlebot3_autonomy_final.launch 
+```

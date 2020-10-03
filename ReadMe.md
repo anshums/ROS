@@ -38,7 +38,7 @@ Obstacle avoidance |  Apriltag tracking  | Line-follower
 <img src="https://github.com/rishabhbhatiamp/ROS/blob/master/AuE893Spring2020/src/final_project/videos/final_project_complete.gif" height="400" />
 
 ### Obstacle-avoidance: 
-<img src="https://github.com/rishabhbhatiamp/ROS/blob/master/AuE893Spring2020/src/assignment4_obstacleavoidance/videos/Wall%20Following%20and%20Obstacle%20Avoidance/Obstacle_Avoidance_real.gif" height="400" />
+<img src="https://github.com/rishabhbhatiamp/ROS/blob/master/AuE893Spring2020/src/assignment4_obstacleavoidance/videos/Wall%20Following%20and%20Obstacle%20Avoidance/obstacle_avoidance_sim.gif" height="400" />
 
 ### Line following: 
 <img src="https://github.com/rishabhbhatiamp/ROS/blob/master/AuE893Spring2020/src/assignment5_trackingandfollowing/videos/Line_Follower/Line%20Following/Line_following_sim.gif" height="400" />
