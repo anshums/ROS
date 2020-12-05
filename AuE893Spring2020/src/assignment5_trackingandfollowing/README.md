@@ -3,18 +3,18 @@
 
 Line Followng             |  Object Tracking
 :-------------------------:|:-------------------------:
-<img src="https://github.com/rishabhbhatiamp/ROS/blob/master/AuE893Spring2020/src/assignment5_trackingandfollowing/videos/April_tag_detection/AprilTag%20Detection%20and%20following/AprilTag_following.giff" height="400" /> |  <img src="https://github.com/rishabhbhatiamp/ROS/blob/master/AuE893Spring2020/src/assignment5_trackingandfollowing/videos/Line_Follower/Line%20Following/Line_following_real.gif" height="400" />
+<img src="https://github.com/prateeks97/ROS/blob/master/AuE893Spring2020/src/assignment5_trackingandfollowing/videos/Line_Follower/Line%20Following/Line_following_real.gif" height="400" /> |  <img src="https://github.com/prateeks97/ROS/blob/master/AuE893Spring2020/src/assignment5_trackingandfollowing/videos/April_tag_detection/AprilTag%20Detection%20and%20following/AprilTag_following.gif" height="400" />
 
-NOTE: To add this package to your own workspace, copy [this](https://github.com/rishabhbhatiamp/ROS/tree/master/AuE893Spring2020/src/assignment5_trackingandfollowing) folder to the src folder of your workspace and run the below command in the package directory.
+NOTE: To add this package to your own workspace, copy [this](https://github.com/prateeks97/ROS/tree/master/AuE893Spring2020/src/assignment5_trackingandfollowing) folder to the src folder of your workspace and run the below command in the package directory.
 ```
 catkin_make
 ```
 
 NOTE: for this implementation, you must already be connected to a turtlebot via ssh, and any teleop operations shold be turned off before running the files of this package. The setup instructions for the turtlebot robot can be found [here](https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/)
 
-The launch files can be found in the [launch](https://github.com/rishabhbhatiamp/ROS/tree/master/AuE893Spring2020/src/assignment5_trackingandfollowing/launch) folder.
+The launch files can be found in the [launch](https://github.com/prateeks97/ROS/tree/master/AuE893Spring2020/src/assignment5_trackingandfollowing/launch) folder.
 
-The python script files can be found in the [nodes](https://github.com/rishabhbhatiamp/ROS/tree/master/AuE893Spring2020/src/assignment5_trackingandfollowing/scripts) folder
+The python script files can be found in the [nodes](https://github.com/prateeks97/ROS/tree/master/AuE893Spring2020/src/assignment5_trackingandfollowing/scripts) folder
 
 ### NOTE: CAMERA ADDITION TO TURTLEBOT3 BURGER IN GAZEBO
 
@@ -39,7 +39,7 @@ These files can be found in this repository in the [camera_in_burger](https://gi
 ```
 $ roslaunch assignment5_trackingandfollowing follow_line_gazebo.launch 
 ```
-<img src="https://github.com/rishabhbhatiamp/ROS/blob/master/AuE893Spring2020/src/assignment5_trackingandfollowing/videos/Line_Follower/Line%20Following/Line_following_sim.gif" height="400" />
+<img src="https://github.com/prateeks97/ROS/blob/master/AuE893Spring2020/src/assignment5_trackingandfollowing/videos/Line_Follower/Line%20Following/Line_following_sim.gif" height="400" />
 
 ### 1b. filename: "1b_follow_line.launch"
 
@@ -64,7 +64,7 @@ $ rosrun image_transport republish compressed in:=raspicam_node/image raw out:=r
 $ roslaunch assignment5_trackingandfollowing follow_line_gazebo.launch 
 ```
 - The final launch file starts the line following node that allows the bot to follow white lines in a moderately lit environment.
-<img src="https://github.com/rishabhbhatiamp/ROS/blob/master/AuE893Spring2020/src/assignment5_trackingandfollowing/videos/Line_Follower/Line%20Following/Line_following_real.gif" height="400" />
+<img src="https://github.com/prateeks97/ROS/blob/master/AuE893Spring2020/src/assignment5_trackingandfollowing/videos/Line_Follower/Line%20Following/Line_following_real.gif" height="400" />
 
 ### "2_continuous_detection_and_bot_moving.launch"
 
@@ -78,7 +78,7 @@ $ roslaunch assignment5_trackingandfollowing follow_line_gazebo.launch
 
 (instructions for installing each package are mentioned in the corresponding Readme.md files on the github pages and were followed. Both packages were successfully installed)
 
-- The tags.yaml file present in the [config](https://github.com/rishabhbhatiamp/ROS/blob/master/AuE893Spring2020/src/assignment5_trackingandfollowing/config/tags.yaml) folder contains the decription of the tag with id no.7. This file is must be placed in the path ```/apriltag_ros/config``` where the apriltag_ros package is installed in your corresponding workspace.
+- The tags.yaml file present in the [config](https://github.com/prateeks97/ROS/blob/master/AuE893Spring2020/src/assignment5_trackingandfollowing/config/tags.yaml) folder contains the decription of the tag with id no.7. This file is must be placed in the path ```/apriltag_ros/config``` where the apriltag_ros package is installed in your corresponding workspace.
 
 - After above configuration, the following commands must be executed before runnning the main launch file (each command in a new terminal):
 
@@ -98,4 +98,4 @@ $ rosrun image_transport republish compressed in:=raspicam_node/image raw out:=r
 $ roslaunch assignment5_trackingandfollowing task_2_april_tag.launch 
 ```
 - Holding the apriltag with id 7 in front of the bot at a distance will result in the bot following the tag. The bot will stop at a distance of 0.3 meters from the tag if the tag is held in one place for long enough. Due to camera lag, the detection faces minor issues at times.
-<img src="https://github.com/rishabhbhatiamp/ROS/blob/master/AuE893Spring2020/src/assignment5_trackingandfollowing/videos/April_tag_detection/AprilTag%20Detection%20and%20following/AprilTag_following.gif" height="400" />
+<img src="https://github.com/prateeks97/ROS/blob/master/AuE893Spring2020/src/assignment5_trackingandfollowing/videos/April_tag_detection/AprilTag%20Detection%20and%20following/AprilTag_following.gif" height="400" />

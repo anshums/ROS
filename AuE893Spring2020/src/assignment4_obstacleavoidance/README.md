@@ -1,7 +1,7 @@
 
 ## ASSIGNMENT 4: Wall Following and Obstacle Avoidance
 
-<img src="https://github.com/rishabhbhatiamp/ROS/blob/master/AuE893Spring2020/src/assignment4_obstacleavoidance/videos/Wall%20Following%20and%20Obstacle%20Avoidance/Obstacle_Avoidance_real.gif" height="400" />
+<img src="https://github.com/prateeks97/ROS/blob/master/AuE893Spring2020/src/assignment4_obstacleavoidance/videos/Wall%20Following%20and%20Obstacle%20Avoidance/Wall_following_sim_real.gif" height="400" />
 
 NOTE: To add this package to your own workspace, copy [this](https://github.com/rishabhbhatiamp/ROS/tree/master/AuE893Spring2020/src/assignment4_obstacleavoidance) folder to the src folder of your workspace and run the below command in the package directory.
 ```
