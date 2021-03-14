@@ -1,5 +1,3 @@
-# AuE893Spring20_PrateekSharma
+# AuE893Spring20_Ansuman_Sharma
 
-I am Prateek Sharma. I am currently pursuing masters in Automotive Engineering from Clemson University (CUICAR). I am majoring in autonomous vehicles and interested in motion planning and controls.
-
-This repo will contain the assignments from a course I have taken, namely, Autonomy: Science and Systems.
+I am Anshuman Sharma, I am pursuing Masters in Robtoics and Autonomous Vehicles. I am looking for jobs in Motion Planning, Controls and Artificial Intelligence. This repository consists of the projects that my team and I did in Spring 2020 in the course AuE8930 Autonomy Sciences and Systems.
